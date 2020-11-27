@@ -29,6 +29,11 @@
  
 
 <%= form_for(@user, url:'/users') do |f| %>
+  <ul>
+  <% @user.errors.full_messages.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+  </ul>
   Username: <%= f.text_field :username, placeholder: "Put your name here" %><br />
   Email : <%= f.text_field :email, placeholder: "example@example.com" %><br />
   Password : <%= f.text_field :password, placeholder: "don't share your password" %><br />

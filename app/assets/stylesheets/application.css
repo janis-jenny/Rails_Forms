@@ -28,7 +28,7 @@ body {
   margin: 100px 0 20px 0;
 }
 
-.new_user {
+.new_user, .edit_user {
   display: flex;
   flex-direction: column;
   align-items: center;

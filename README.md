@@ -5,43 +5,53 @@
   </a>
 </p>
 
-<h1 align="center">Micro Reddit</h1>
+<h1 align="center">Rails Forms</h1>
 
 <p align="center">
   <strong>Made by Jenny Cárdenas and Thales Neves</strong>
   <br>
-   Made as a practice for Active Record in Ruby on Rails.
+   This is a small example of how to implement forms in Ruby on Rails.
 </p>
 
 <p align="center">
-  <a href="https://github.com/kcotrinam/micro-reddit/issues">
+  <a href="https://github.com/janis-jenny/Rails_Forms/issues?q=is%3Aopen+is%3Aissue">
     <img src="https://img.shields.io/badge/REPORT%20A%20BUG-purple?style=for-the-badge">
   </a>
    ‎ ‎ ‎ ‎
-  <a href="https://github.com/kcotrinam/micro-reddit/issues">
+  <a href="https://github.com/janis-jenny/Rails_Forms/issues?q=is%3Aopen+is%3Aissue">
     <img src="https://img.shields.io/badge/Request%20a%20feature-purple?style=for-the-badge">
   </a>
 </p>
 
 
 
-## 👩🏼‍💻 About Micro Reddit 
+## 👩🏼‍💻 About Rails Form
 
-The app works in the rails console and allows the user to play with the relations between comments, posts and users.
+In this project, we created different versions of forms using various methods like form_tag, form_for and vanilla HTML form in the views file, both for creating a new form and updating an existing form.<br>
+To achieve this, we generated a user model and a users controller with the sqlite3 being used for storage.<br>
+All the form fields have the necessary validations required to check the user input.
 
-![screenshot](/screenshot1.png)
-![screenshot](/screenshot2.png)
-![screenshot](/screenshot3.png)
+![screenshot](/railsform.png)
+
 <hr>
 
 
-## 🤖 Set Up
+## 🤖 Getting started
 
-Clone the [repository URL](https://github.com/thneves/micro-reddit-app.git), get into the project root folder and run the migrations for the database
-> rails db:migrate
+You'll need to have both Ruby and Rails installed on your computer.
 
-And then use the rails console for the project to run the tests using the command
-> rails console
+- In the desired directory, type `git clone https://github.com/janis-jenny/Rails_Forms.git` in the terminal.
+
+- Then type `cd Re-Former` in the terminal to change the directory into the root of the project.
+
+- Then type `bundle install && yarn install` to download the necessary gem files for the project.
+
+- Run `rails server` to start the server for the application.
+
+- Open `localhost:3000/users/new` to start filling in the form and create a new user.
+
+- Open `localhost:3000/users/id/edit` to update an existing users' information. Remember to replace the `id` in the url with user id number such as `localhost:3000/users/1/edit`.
+
 
 
 ## 🔧 Built With
@@ -68,7 +78,7 @@ And then use the rails console for the project to run the tests using the comman
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/kcotrinam/micro-reddit/issues).
+Feel free to check the [issues page](https://github.com/janis-jenny/Rails_Forms/issues?q=is%3Aopen+is%3Aissue).
 
 
 
@@ -80,7 +90,7 @@ Give a ⭐️ if you like this project!
 
 ## 📌 Acknowledgments
 
-- [TheOdinProject.com](https://www.theodinproject.com/courses/ruby-on-rails/lessons/building-with-active-record-ruby-on-rails)
+- [TheOdinProject.com](https://www.theodinproject.com/courses/ruby-on-rails/lessons/forms)
 
 
 

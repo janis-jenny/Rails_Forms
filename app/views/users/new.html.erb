@@ -28,7 +28,7 @@
 <%# <% end %>
  
 
-<%= form_for(@user, url:'/users')  do |f| %>
+<%= form_for @user, url:'/users' do |f| %>
   <ul>
   <% @user.errors.full_messages.each do |error| %>
     <li><%= error %></li>
@@ -45,7 +45,5 @@
     Password <%= f.text_field :password, placeholder: "your secret pass", class:"placeholder"  %>
   </div>
   
-  
-  
-  <%= f.submit %>
+  <%= f.submit :class => 'submit-btn' %>
 <% end %>

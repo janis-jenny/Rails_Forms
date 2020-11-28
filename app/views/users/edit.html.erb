@@ -1,5 +1,23 @@
 <h1 class="rails-form-h1">Edit User</h1>
 
+<%# <%= form_for @user, url:'/users' do |f| %>
+<%#<ul>
+  <% @user.errors.full_messages.each do |error| %>
+  <%# <li><% error %><%# </li> %>
+  <%# <% end %><%#  %>
+  <%# </ul>
+  <div class='form-group'>
+    Username <%= f.text_field :username, placeholder: "Put your name here", class:"placeholder"  %>
+  <%# </div>
+  <div class='form-group'>
+    Email <%= f.email_field :email, placeholder: "example@example.com", class:"placeholder"  %>
+  <%# </div>
+  <div class='form-group'>
+    Password <%= f.password_field :password, placeholder: "your secret pass", class:"placeholder"  %>
+  <%# </div>
+  <%= f.submit :class => 'submit-btn' %>
+<%# end %> 
+
 <%= form_for(@user) do |f| %>
   <ul>
   <% @user.errors.full_messages.each do |error| %>
@@ -10,10 +28,10 @@
    Username: <%= f.text_field :username, placeholder: "Put your name here", required: 'required', class:"placeholder" %><br />
   </div>
   <div class='form-group'>
-    Email : <%= f.text_field :email, placeholder: "example@example.com", required: 'required', class:"placeholder" %><br />
+    Email : <%= f.email_field :email, placeholder: "example@example.com", required: 'required', class:"placeholder" %><br />
   </div>
   <div class='form-group'>
-    Password : <%= f.text_field :password, placeholder: "don't share your password", required: 'required', class:"placeholder" %><br />
+    Password : <%= f.password_field :password, placeholder: "don't share your password", required: 'required', class:"placeholder" %><br />
   </div>
   <%= f.submit 'Update', :class => 'submit-btn' %>
 <% end %>
